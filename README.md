@@ -3,27 +3,27 @@
     	<img src="https://s2.loli.net/2022/05/24/pACTVQNLW6XvhEb.png">
     </a>
 </p>
-
 <p align="center">
     <a href="#">
-    	<img src="https://img.shields.io/badge/Vue-2.6.14-%2342b983">
+    	<img src="https://img.shields.io/badge/Vue-2.6.10-%2342b983">
     </a>
     <a href="#">
-    	<img src="https://img.shields.io/badge/Ant%20Design%20Vue-1.7.8-%231890ff">
+    	<img src="https://img.shields.io/badge/element-2.13.2-%231890ff">
     </a>
         <a href="#">
-    	<img src="https://img.shields.io/badge/axios-0.26.1-red">
+    	<img src="https://img.shields.io/badge/axios-0.18.1-red">
     </a>
         <a href="#">
-    	<img src="https://img.shields.io/badge/build-preview-orange">
+    	<img src="https://img.shields.io/badge/Echarts-4.9.0-red">
     </a>
 </p>
 
 
 
+
 ## brief introduction:yum: 
 
-本系统基于Vue +Element UI用于搭建中后台系统。中后台构建为基础上的二次开发。
+本系统基于**Vue + Element UI**用于搭建中后台系统。中后台构建为**vue-element-admin**基础上的二次开发。
 
 **CyanLemon-admin**，他很"酸"！也很帅
 
@@ -46,16 +46,14 @@ Go to the project directory
 Install dependencies
 
 ```bash
-   yarn install
+   npm install
 ```
 
 Start the server
 
 ```bash
-   yarn dev
+   npm run dev
 ```
-
-
 
 
 
@@ -63,52 +61,48 @@ Start the server
 
 
 
+## Color reference:fountain_pen:
 
+- 主色调：#14C9C9
+- 副色调：\#3491FA
 
-## Color reference:fountain_pen: 
-
-| Color       | Hex                                                          |
-| ----------- | ------------------------------------------------------------ |
-| Theme Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+)\#14C9C9 |
-| Vice Theme  | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) \#3491FA |
-|             | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+)     |
-|             | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+)     |
-
-
+ 
 
 ## Project directory:file_folder: 
 
 ```
-- Dashboard
-  - 分析页
-  - 监控页
-  - 工作台
-- 表单页
-  - 基础表单页
-  - 分步表单页
-  - 高级表单页
-- 列表页
-  - 查询表格
-  - 标准列表
-  - 卡片列表
-  - 搜索列表（项目/应用/文章）
-- 详情页
-  - 基础详情页
-  - 高级详情页
-- 结果
-  - 成功页
-  - 失败页
-- 异常
-  - 403 无权限
-  - 404 找不到
-  - 500 服务器出错
-- 个人页
-  - 个人中心
-  - 个人设置
-- 帐户
-  - 登录
-  - 注册
-  - 注册成功
+├── build                      # 构建相关
+├── mock                       # 项目mock 模拟数据
+├── plop-templates             # 基本模板
+├── public                     # 静态资源
+│   │── favicon.ico            # favicon图标
+│   └── index.html             # html模板
+├── src                        # 源代码
+│   ├── api                    # 所有请求
+│   ├── assets                 # 主题 字体等静态资源
+│   ├── components             # 全局公用组件
+│   ├── directive              # 全局指令
+│   ├── filters                # 全局 filter
+│   ├── icons                  # 项目所有 svg icons
+│   ├── lang                   # 国际化 language
+│   ├── layout                 # 全局 layout
+│   ├── router                 # 路由
+│   ├── store                  # 全局 store管理
+│   ├── styles                 # 全局样式
+│   ├── utils                  # 全局公用方法
+│   ├── vendor                 # 公用vendor
+│   ├── views                  # views 所有页面
+│   ├── App.vue                # 入口页面
+│   ├── main.js                # 入口文件 加载组件 初始化等
+│   └── permission.js          # 权限管理
+├── tests                      # 测试
+├── .env.xxx                   # 环境变量配置
+├── .eslintrc.js               # eslint 配置项
+├── .babelrc                   # babel-loader 配置
+├── .travis.yml                # 自动化CI配置
+├── vue.config.js              # vue-cli 配置
+├── postcss.config.js          # postcss 配置
+└── package.json               # package.json
 ```
 
 
