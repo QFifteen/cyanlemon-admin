@@ -47,12 +47,26 @@ export const constantRoutes = [
     path: '/',
     component: Layout,
     redirect: '/dashboard',
+    meta: { title: 'Exam', icon: 'el-icon-s-help' },
     children: [{
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
-    }]
+      meta: { title: '分析页', icon: 'Lemon_iconfont lemon-denglu' }
+    },
+    {
+      path:'master',
+      name:'master',
+      component: () => import('@/views/master/index'),
+      meta: { title: '数据台', icon: 'table' }
+    },
+    {
+      path:'master',
+      name:'master',
+      component: () => import('@/views/master/index'),
+      meta: { title: '工作台', icon: 'table' }
+    }
+  ]
   },
 
   {
@@ -60,7 +74,7 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/example/table',
     name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    meta: { title: 'Exam', icon: 'el-icon-s-help' },
     children: [
       {
         path: 'table',
