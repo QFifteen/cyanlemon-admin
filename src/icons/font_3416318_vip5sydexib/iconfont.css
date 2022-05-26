@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Lemon_iconfont"; /* Project id 3416318 */
+  src: url('iconfont.woff2?t=1653444327782') format('woff2'),
+       url('iconfont.woff?t=1653444327782') format('woff'),
+       url('iconfont.ttf?t=1653444327782') format('truetype');
+}
+
+.Lemon_iconfont {
+  font-family: "Lemon_iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lemon-denglu:before {
+  content: "\e612";
+}
+
+.lemon-zhucehuiyuan:before {
+  content: "\e635";
+}
+
