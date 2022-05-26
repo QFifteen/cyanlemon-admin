@@ -19,6 +19,9 @@ import router from './router'
 import '@/icons' // icon
 import '@/permission' // permission control
 
+//阿里矢量图
+import '@/icons/font_3416318_vip5sydexib/iconfont.css'
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
